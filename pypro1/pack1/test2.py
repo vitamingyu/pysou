@@ -9,6 +9,7 @@ s = 'sequence'
 print(len(s)) # 8글자
 print('포함 횟수 :', s.count('e'))
 print('검색 위치 :', s.find('e'), s.find('e', 3), s.rfind('e'))
+# 0부터 시작하여 e가 몇번째 있는지, 3번째 이후로 e가 몇번째 있는지, 마지막 e는 몇번째 있는지 알려줌
 print("=" * 50)
 
 ss = 'mbc'
@@ -25,11 +26,11 @@ print("=" * 50)
 
 sss = 'mbc kbs sbs '
 print(sss)
-print(ss.strip())
-print(ss.lstrip())
-print(ss.rstrip())
+print(sss.strip()) # 양쪽의 공백 제거
+print(sss.lstrip())
+print(sss.rstrip())
 
-ssss = sss.split(sep = ' ')
+ssss = sss.split(sep = ' ') # 공백을 단위로 쪼갠다
 print(ssss)
 s5 = sss.replace('kbs', '공영방송')
 print(s5)
@@ -44,9 +45,9 @@ c = list()
 print(c)
 print("=" * 50)
 family = ['준수', '예진', '정혜']
-family.append('준호') # 추가
+family.append('준호') # 값 하나 추가
 family.insert(0, '민규') # 0번째 데이터 값 추가함으로서 기존의 데이터는 밀려난다.
-family.extend(['tom', 'oscar'])
+family.extend(['tom', 'oscar']) # 기존의 리스트에 새로운 리스트를 합침
 family += ['지원', '국인']
 family.remove('tom') # 지우기
 # family.clear() 다 날리기
@@ -59,6 +60,7 @@ print(aa[0])
 print(aa[0:3])
 print(aa[3])
 print(aa[3][2])
+print()
 
 aa.remove(2) # 값에 의한 삭제
 del aa[3]    # 순서에 의한 삭제
@@ -69,9 +71,10 @@ bb = aa # 주소 치환 : 같은 객체를 참조, 얕은 복사
 print(aa, ' ', bb, ' ', id(aa), id(bb))
 bb[0] = 'nice'
 print(aa, ' ', bb)
+print()
 
 import copy
-cc = copy.deepcopy(aa) # 주소를 치환 : 새로운 공간이 확보 깊은 복사
+cc = copy.deepcopy(aa) # 주소를 새롭게 치환 : 새로운 공간을 확보, 깊은 복사
 print(aa, ' ', cc, ' ', id(aa), id(cc))
 print(aa == cc, aa is cc) # True False
 cc[0] = '쉬고 할까'
@@ -86,6 +89,7 @@ print(sbs)
 sbs.pop()
 print(sbs)
 print('\n')
+
 sbs = [10, 20, 30]
 sbs.append(40)
 print(sbs)
