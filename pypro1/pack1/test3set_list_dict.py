@@ -61,3 +61,4 @@ del dic['오라클'] # 삭제
 dic.pop('숫자')  # 삭제
 print(dic)
 print(dic.values()) # value 값만 보기
+
