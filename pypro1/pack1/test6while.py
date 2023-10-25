@@ -48,9 +48,11 @@ print("=" * 50)
 print('문1 : 1 ~ 100 사이의 정수 중 3의 배수나 2의 배수가 아닌 수를 출력하고 그 합을 출력')
 i = 1; hap = 0
 while i < 100:
-    if i % 3 == 0 and i % 2 != 0:
+    if i % 3 != 0 and i % 2 != 0:
+        print(i, end=' ')
         hap += i
     i += 1
+print()
 print('합은 ' + str(hap))
 print("=" * 50)
 
@@ -58,7 +60,7 @@ print('for문으로 구구단 : 2 ~ 5 단의 구구단. 단이 다르면 다음 
 for dan in range(2, 6):  
     for i in range(1, 10):
         print(f'{dan} x {i} = {dan * i}')
-    print()  
+    print()
 
 import time
 # time.sleep(3)
@@ -66,7 +68,6 @@ import time
 
 button = input('폭탄 스위치를 누를까요(y/n)')
 if button == 'Y' or button == 'y':
-    #pass
     count = 5
     while 1 <= count:
         print('%d초 남았군요'%count)
