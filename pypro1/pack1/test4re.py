@@ -30,7 +30,7 @@ print()
 p = re.compile('the', re.IGNORECASE) # flag 사용하기
 print(p.findall('The dog the dog'))  # the만 출력이 된다.
 
-s = """My name is kwangjin.
+s = """My name is mingyu.
 l am happy"""
 print(s)
 p = re.compile('^.+', re.MULTILINE)  # flag 사용하기
