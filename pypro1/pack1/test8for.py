@@ -127,7 +127,6 @@ for i in temp:
     print(i, end = " ")
 print()
 print([i for i in temp])
-print([i for i in temp])
 print()
 
 datas = [1,2,'a', True, 3]
