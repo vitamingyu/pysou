@@ -27,8 +27,8 @@ print("=" * 50)
 sss = 'mbc kbs sbs '
 print(sss)
 print(sss.strip()) # 양쪽의 공백 제거
-print(sss.lstrip())
-print(sss.rstrip())
+print(sss.lstrip()) # 왼쪽 공백 제거
+print(sss.rstrip()) # 오른쪽 공백 제거
 
 ssss = sss.split(sep = ' ') # 공백을 단위로 쪼갠다
 print(ssss)

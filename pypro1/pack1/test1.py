@@ -31,7 +31,7 @@ print(A, ' ', a)
 
 print()
 import keyword  # 설치는 되었으나 메모리에 로딩되지 않은 모듈 로딩하기
-print('예약어 목록 : ' , keyword.kwlist)  # 예약어는 사용자 정의 이름이로 사용하면 안됨
+print('예약어 목록 : ' , keyword.kwlist)  # 예약어는 사용자 정의 이름으로 사용하면 안됨
 
 print()
 print(10, oct(10), hex(10), bin(10))  # 10 0o12 0xa 0b1010
@@ -57,6 +57,7 @@ print(v1,v2,v3)
 
 print('a', end=',') # 자바에선 system.out
 print('b')
+
 print("=" * 50)
 
 v1 = 1,2,3;
